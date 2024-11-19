@@ -175,23 +175,23 @@ function disableUsedLettersFromKeyboard() {
 function wrongLetter(mistakenLetter) {
     errors++
     switch (errors) {
-        case tete:
-            errors = erreurTete()
+        case 1:
+            tete
             break;
-        case corps:
-            errors = erreurCorps()
+        case 2:
+           corps()
             break;
-        case brasGauhe:
-            errors = erreurBrasGauche()
+        case 3:
+            jambeGauche()
             break;
-        case brasDroit:
-            errors = erreurBrasDroit()
+        case 4:
+         jambeDroite()
             break;
-        case jambeGauche:
-            errors = erreurJambeGauche()
+        case 5:
+           brasGauche()
             break;
-        case jambeDroite:
-            errors = erreurJambeDroite()
+        case 6:
+            brasDroit()
             break;
     }
     document.querySelector('.pendu').innerHTML += "X"
@@ -274,12 +274,14 @@ let dessin = canvasPendu.getContext('2d')
 
 
 //tete
-let tete =
+function tete(){
     dessin.beginPath()
     dessin.strokeStyle = "#000"
     dessin.lineWidth = 2
     dessin.arc(70,30, 10, 0, Math.PI * 2, true)
     dessin.stroke()
+}
+
 
 
 
