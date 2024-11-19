@@ -176,7 +176,7 @@ function wrongLetter(mistakenLetter) {
     errors++
     switch (errors) {
         case 1:
-            tete
+            tete()
             break;
         case 2:
            corps()
